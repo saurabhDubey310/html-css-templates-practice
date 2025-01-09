@@ -1,75 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-  <title>Travelwith-us</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<!-- Header -->
-  <div class="header-container">
-    <div class="left-container">
-      <img class="logo" src="assests/travel-logo.jpg" alt="Logo">
-    </div>
-    <div class="right-container">
-      <div><i class="fa-regular fa-clock"></i>09:00AM - 05:00PM</div>
-      <div><i class="fa-solid fa-phone" ></i>+91 7990318974</div>    
-        <button class="header-button">
-          Get a Free Quote
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-blue-50 font-sans">
+    <!-- Navbar -->
+    <header class="bg-blue-600 text-white shadow-md">
+      <nav
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <div class="text-2xl font-bold">Travel</div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="hover:text-blue-300">Home</a>
+          <a href="#photos" class="hover:text-blue-300">Photos</a>
+          <a href="#about" class="hover:text-blue-300">About Us</a>
+          <a href="#contact" class="hover:text-blue-300">Contact Us</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          class="md:hidden text-white focus:outline-none"
+          id="mobile-menu-button"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
         </button>
-    </div>
-  </div>
-  
-  <!-- Navbar -->
+      </nav>
 
-  <nav class="navbar">
-    <div class="navbar-container">
-      <ul class="navbar-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#typography">Typography</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-      <div class="social-icons">
-        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://www.google.co.in/"><i class="fa-brands fa-google-plus-g"></i></a>
+      <!-- Mobile Menu -->
+      <div class="md:hidden bg-blue-800" id="mobile-menu" style="display: none">
+        <a href="#home" class="block py-2 px-4 text-white hover:bg-blue-700"
+          >Home</a
+        >
+        <a href="#contact" class="block py-2 px-4 text-white hover:bg-blue-700"
+          >Contact</a
+        >
+        <a href="#about" class="block py-2 px-4 text-white hover:bg-blue-700"
+          >About Us</a
+        >
+        <a href="#photos" class="block py-2 px-4 text-white hover:bg-blue-700"
+          >Photos</a
+        >
       </div>
-    </div>
-  </nav>
+    </header>
 
-  <!-- Home -->
-
-  <section class="home-section" id="home">
-    <div class="home-content">
-      <p class="primary-para">ENJOY THE BEST DESTINATIONS WITH OUR TRAVEL AGENCY</p>
-      <p class="secondary-para">Explore <b>The World</b></p>
-      <button class="home-section-button">Get in touch</button>
-    </div>
-  </section>
-
-  <div class="home-section-images">
-    <div class="image-row">
-      <div class="image-container">
-        <img src="assests/place1.jpg" alt="image1">
-        <p class="image-text">Mountain view</p>
+    <section
+      id="home"
+      class="relative bg-cover bg-center h-screen"
+      style="
+        background-image: url('https://wallpaperaccess.com/full/2538198.jpg');
+      "
+    >
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div
+        class="relative z-10 max-w-7xl mx-auto px-6 py-24 text-center text-white"
+      >
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+          Embark on the Ultimate Ocean Adventure
+        </h1>
+        <p class="text-lg md:text-2xl mb-8">
+          Discover pristine beaches, vibrant marine life, and breathtaking
+          coastlines. Travel across the ocean to create memories that will last
+          a lifetime.
+        </p>
+        <a
+          href="#destinations"
+          class="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold transition transform hover:bg-blue-700 hover:scale-105"
+        >
+          Start Your Journey
+        </a>
       </div>
-      <div class="image-container">
-        <img src="assests/place2.jpg" alt="image2">
-        <p class="image-text">Boating</p>
-      </div>
-      <div class="image-container">
-        <img src="assests/place3.jpg" alt="image3">
-        <p class="image-text">Chill Beach</p>
-      </div>
-    </div>
-    <p class="home-section-para">Other Tours</p>
-  </div>
-  
+    </section>
 
-  
-</body>
+    <section id="photos" class="bg-white py-16">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-extrabold text-blue-900 mb-12">
+          Explore the Ocean Beauty
+        </h2>
+        <div class="flex flex-wrap justify-center gap-4">
+          <!-- Photo 1 -->
+          <div class="relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 group">
+            <img
+              src="https://i.pinimg.com/originals/3d/ee/5e/3dee5e1d0abe406d20bdf295df5d8c7f.jpg"
+              alt="Ocean View 1"
+              class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform duration-300 ease-in-out group-hover:scale-10"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 ease-in-out"
+            >
+              <p class="text-white text-lg font-semibold">Ocean View 1</p>
+            </div>
+          </div>
+    
+          <!-- Photo 2 -->
+          <div class="relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 group">
+            <img
+              src="https://www.holidaymonk.com/wp-content/uploads/2023/05/Travel-Guide-to-Vietnam.jpg"
+              alt="Ocean View 2"
+              class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform duration-300 ease-in-out group-hover:scale-10"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 ease-in-out"
+            >
+              <p class="text-white text-lg font-semibold">Ocean View 2</p>
+            </div>
+          </div>
+    
+          <!-- Photo 3 -->
+          <div class="relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 group">
+            <img
+              src="https://i.pinimg.com/originals/c3/90/cc/c390cc878252e208724600653ac8aa2f.jpg"
+              alt="Ocean View 3"
+              class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform duration-300 ease-in-out group-hover:scale-10"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 ease-in-out"
+            >
+              <p class="text-white text-lg font-semibold">Ocean View 3</p>
+            </div>
+          </div>
+    
+          <!-- Photo 4 -->
+          <div class="relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 group">
+            <img
+              src="https://media.istockphoto.com/id/904172104/photo/weve-made-it-all-this-way-i-am-proud.jpg?s=612x612&w=0&k=20&c=MewnsAhbeGRcMBN9_ZKhThmqPK6c8nCT8XYk5ZM_hdg="
+              alt="Ocean View 4"
+              class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform duration-300 ease-in-out group-hover:scale-10"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 ease-in-out"
+            >
+              <p class="text-white text-lg font-semibold">Ocean View 4</p>
+            </div>
+          </div>
+    
+          <!-- Photo 5 -->
+          <div class="relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 group">
+            <img
+              src="https://t3.ftcdn.net/jpg/08/18/52/32/360_F_818523251_T67ETZ2Dx8YMq9aQKgTeRw4ok5mCaeou.jpg"
+              alt="Ocean View 5"
+              class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform duration-300 ease-in-out group-hover:scale-10"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 ease-in-out"
+            >
+              <p class="text-white text-lg font-semibold">Ocean View 5</p>
+            </div>
+          </div>
+    
+          <!-- Photo 6 -->
+          <div class="relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 group">
+            <img
+              src="https://thumbs.dreamstime.com/b/happy-couple-love-travel-raised-hands-cliff-happy-couple-love-travel-raised-hands-cliff-norway-man-woman-112188598.jpg"
+              alt="Ocean View 6"
+              class="w-full h-64 object-cover rounded-lg shadow-lg transition-transform duration-300 ease-in-out group-hover:scale-10"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 ease-in-out"
+            >
+              <p class="text-white text-lg font-semibold">Ocean View 6</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- About Us Section -->
+    <section id="about" class="bg-blue-100 py-16">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-extrabold text-blue-900">About Us</h2>
+          <p class="text-lg text-gray-700 mt-4">
+            We are passionate about ocean travel and committed to providing our
+            customers with unforgettable experiences across the seas. Join us as
+            we explore new horizons, create lasting memories, and experience the
+            wonders of the ocean.
+          </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <!-- Image 1 -->
+          <div class="md:w-1/2">
+            <img
+              src="https://www.peerspace.com/resources/wp-content/uploads/man-3365368_1280.jpg"
+              alt="Our Team"
+              class="w-full h-80 object-cover rounded-lg shadow-lg"
+            />
+          </div>
+
+          <!-- Text -->
+          <div class="md:w-1/2">
+            <h3 class="text-2xl font-semibold text-blue-900 mb-4">
+              Our Mission
+            </h3>
+            <p class="text-gray-700 mb-4">
+              At OceanTravel, our mission is simple: to provide our customers
+              with unique and life-changing travel experiences. We believe in
+              sustainable and responsible travel, allowing you to explore the
+              world’s most beautiful and remote destinations while respecting
+              the environment.
+            </p>
+            <p class="text-gray-700">
+              Whether you're looking for a relaxing beach getaway or an
+              adventurous sailing experience, we promise to provide an
+              experience you’ll never forget.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="bg-blue-100 py-16">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-extrabold text-blue-900">Contact Us</h2>
+          <p class="text-lg text-gray-700 mt-4">
+            We’d love to hear from you! Whether you have questions about our
+            services or need help planning your trip, feel free to reach out to
+            us.
+          </p>
+        </div>
+
+        <!-- Contact Form Container -->
+        <div class="max-w-4xl mx-auto p-8 bg-white rounded-lg shadow-xl">
+          <form action="#" method="POST" class="space-y-6">
+            <!-- Name Input -->
+            <div>
+              <label for="name" class="block text-lg font-medium text-gray-900"
+                >Your Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="mt-2 w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Enter your name"
+              />
+            </div>
+
+            <!-- Email Input -->
+            <div>
+              <label for="email" class="block text-lg font-medium text-gray-900"
+                >Your Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="mt-2 w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <!-- Message Textarea -->
+            <div>
+              <label
+                for="message"
+                class="block text-lg font-medium text-gray-900"
+                >Your Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                class="mt-2 w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+              <button
+                type="submit"
+                class="w-full py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-900 text-white py-8">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Footer Content Wrapper -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <!-- Column 1: Nav Links -->
+          <div class="flex flex-col items-center md:items-start">
+            <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="#home"
+                  class="hover:text-blue-400 transition duration-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="hover:text-blue-400 transition duration-300"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#photos"
+                  class="hover:text-blue-400 transition duration-300"
+                  >Photos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="hover:text-blue-400 transition duration-300"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 2: Company Info -->
+          <div class="flex flex-col items-center md:items-start">
+            <h3 class="text-xl font-bold mb-4">Company Info</h3>
+            <p class="text-sm text-gray-300 mb-4">
+              OceanTravel is dedicated to providing unforgettable travel
+              experiences across the oceans. Explore beautiful destinations,
+              enjoy comfortable voyages, and make lasting memories with us.
+            </p>
+            <p class="text-sm">© 2025 OceanTravel. All Rights Reserved.</p>
+          </div>
+
+          <!-- Column 3: Social Media Links -->
+          <div class="flex flex-col items-center md:items-start">
+            <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+            <div class="space-x-4">
+              <a
+                href="#"
+                class="text-white hover:text-blue-400 transition duration-300"
+              >
+                <i class="fab fa-facebook-f"></i>
+                <!-- Example Font Awesome Icon -->
+              </a>
+              <a
+                href="#"
+                class="text-white hover:text-blue-400 transition duration-300"
+              >
+                <i class="fab fa-twitter"></i>
+                <!-- Example Font Awesome Icon -->
+              </a>
+              <a
+                href="#"
+                class="text-white hover:text-blue-400 transition duration-300"
+              >
+                <i class="fab fa-instagram"></i>
+                <!-- Example Font Awesome Icon -->
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
